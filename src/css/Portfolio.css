@@ -1,0 +1,563 @@
+
+.mainContainer {
+  width: 75vw;
+}
+
+
+
+
+
+/* ABOUT */
+
+
+.aboutSection {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aboutWhiteShine {
+  filter: drop-shadow(0px 0px 23px var(--mainText));
+  -webkit-text-stroke: 1px var(--mainText);
+}
+
+.aboutSection .shine {
+  color: var(--about);
+  filter: drop-shadow(0px 0px 23px var(--about));
+  -webkit-text-stroke: 1px var(--about);
+}
+
+.mainLogoRender {
+  width: 26%;
+  height: 18vh;
+}
+
+.presentationContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.presentationContainer .infoContainer {
+  width: 50%;
+}
+
+.presentationContainer .infoContainer .name {
+  font-size: 25px;
+}
+
+.presentationContainer .infoContainer .resume {
+  margin-top: 3vh;
+  opacity: .5;
+  width: 80%;
+}
+
+.aboutSection .footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutSection .footer .lenguagesContainer {
+  display: flex;
+  justify-content: space-around;
+  font-size: smaller;
+  gap: 1em;
+}
+
+.aboutSection .footer .lenguagesContainer span {
+  color: var(--mainText) !important;
+  filter: drop-shadow(0px 0px 0px );
+  -webkit-text-stroke: 0px var(--about); 
+}
+
+.aboutSection .footer .title {
+  border-bottom: 3px solid var(--mainText);
+  width: fit-content;
+  margin-bottom: 2vh;
+  font-size: larger;
+}
+
+.aboutSection .footer .footerItem {
+  font-size: smaller;
+}
+
+.aboutSection .fa-instagram {
+  margin-right: 2em;
+}
+
+
+
+/*Experience*/
+
+.experienceSection {
+  height: 100vh;
+  width: 100%;
+  padding: 15vh 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.experienceSection .shine {
+  color: var(--experience);
+  filter: drop-shadow(0px 0px 23px var(--experience));
+  -webkit-text-stroke: 1px var(--experience);
+}
+
+
+.experienceSection .experienceCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3em;
+}
+
+.experienceCard .header {
+  min-width: 25vw;
+}
+
+.experienceCard .workPlace {
+  font-size: x-large;
+  margin-bottom: 2vh;
+}
+
+.experienceCard .line {
+  width: 20vw;
+  height: 1px;
+  background-color: var(--experience);
+}
+
+.experienceCard .body {
+  width: 20vw;
+}
+
+.experienceCard .body .title {
+  font-size: larger;
+  margin-bottom: 2vh;
+}
+
+.experienceCard .body .description {
+  opacity: .4;
+}
+
+/*Knowledge*/
+
+.knowledgeSection {
+  padding: 15vh 5em;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5em;
+}
+
+.knowledgeSection .shine {
+  color: var(--knowledge);
+  filter: drop-shadow(0px 0px 23px var(--knowledge));
+  -webkit-text-stroke: 1px var(--knowledge);
+}
+
+.knowledgeSection .knowledgeCard {
+  display: flex;
+}
+
+.knowledgeSection .knowledgeCard img {
+  width: 10vw;
+  height: 10vh;
+}
+
+.knowledgeSection .knowledgeCard .body .title {
+  font-size: large;
+  margin-bottom: 3vh;
+}
+
+.knowledgeSection .knowledgeCard .body .name {
+  margin-bottom: 1vh;
+}
+
+
+/*PROJECTS*/
+
+.projectsSection {
+  width: 100%;
+  height: 100vh;
+  padding-top: 15vh;
+  padding-left: 5em;
+}
+
+.projectsSection .shine {
+  color: var(--projects);
+  filter: drop-shadow(0px 0px 23px var(--projects));
+  -webkit-text-stroke: 1px var(--projects);
+}
+
+.projectsSection .projectCard {
+  display: flex;
+  margin-bottom: 10vh;
+  gap: 3em;
+}
+
+.projectsSection .projectCard .number{
+  font-size: 150px;
+  opacity: .4;
+}
+
+.projectsSection .projectCard .content {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.projectCard .imgRender {
+  width: 20vw;
+  height: 25vh;
+  background-position: center;
+  background-size: cover;
+  opacity: .4;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+.projectCard .imgRender:hover {
+  opacity: 1;
+}
+
+.projectCard .description {
+  opacity: .4;
+}
+
+
+/*NAV*/
+
+.sectionsNavContainer {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  padding-top: 15vh;
+}
+
+.sectionsNavContainer .mainNav {
+  height: 75vh;
+  width: 70%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  left: 80%;
+}
+
+
+.sectionsNavContainer .mainNav .indicator {
+  display: flex;
+  gap: 2em;
+}
+
+.sectionsNavContainer .mainNav .line {
+  position: absolute;
+  width: 1px;
+  height: 75vh;
+  background-color: var(--mainText);
+  left: 1%;
+}
+
+.sectionsNavContainer .mainNav .dot {
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  background-color: var(--mainText);
+  border-radius: 50%;
+}
+
+
+/*Light animation*/
+
+.lightAnimation {
+  animation: lightAnimation 1s infinite;
+}
+
+.off {
+  color: gray !important;
+  filter: drop-shadow(0px 0px 0px) !important;
+  -webkit-text-stroke: 0px !important;
+}
+
+@keyframes lightAnimation {
+  0% {
+    filter: drop-shadow(0px 0px 5px #000);
+    opacity: 0.0;
+  }
+  20% {
+    filter: drop-shadow(0px 0px 23px );
+    opacity: 1.1;
+  }
+
+  45% {
+    filter: drop-shadow(0px 0px 5px #000);
+    opacity: 0.0;
+  }
+
+  60% {
+    filter: drop-shadow(0px 0px 23px );
+    opacity: 1.1;
+  }
+
+  78% {
+    filter: drop-shadow(0px 0px 5px #000);
+    opacity: 0.0;
+  }
+
+  80% {
+    filter: drop-shadow(0px 0px 23px );
+    opacity: 1.1;
+  }
+
+  90% {
+    filter: drop-shadow(0px 0px 5px #000);
+    opacity: 0.0;
+  }
+
+  95% {
+    filter: drop-shadow(0px 0px 23px );
+    opacity: 1.1;
+  }
+}
+
+
+@media (max-width:800px) {
+  .mainContainer {
+    width: 100vw;
+   overflow: hidden;
+  }
+  
+
+  /* ABOUT */
+
+  .aboutSection {
+    justify-content: left;
+  }
+  
+
+  .mainLogoRender {
+    width: 20%;
+    height: 12vh;
+  }
+  
+
+  
+  .presentationContainer .infoContainer {
+    width: 70%;
+  }
+  
+  .presentationContainer .infoContainer .name {
+    font-size: 17px;
+  }
+
+  .presentationContainer .infoContainer .subtitle {
+    font-size: 14px;
+  }
+  .presentationContainer .infoContainer .resume {
+    font-size: 13px;
+    width: 60%;
+  }
+
+  .aboutSection .footer {
+    width: 100vw;
+  }
+
+  .aboutSection .footer .contact {
+    font-size: 10px;
+  }
+
+  .aboutSection .footerItem .fa-globe {
+    display: none;
+  }
+
+  
+  .aboutSection .footer .lenguagesContainer {
+    flex-direction: column;
+    font-size: 10px;
+    gap: .5em;
+  }
+  .aboutSection .footer .title {
+    font-size: 12px;
+  }
+  .aboutSection .fa-instagram {
+    margin-right: 1em;
+  }
+  
+  
+  
+  /*Experience*/
+  
+  .experienceSection {
+    height: fit-content;
+    padding: 0em 0em;
+    display: block ;
+  }
+ 
+  
+  .experienceSection .experienceCard {
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 15vh;
+  }
+  
+  .experienceCard .header {
+    width: 80vw;
+    padding: 0em;
+  }
+  
+  .experienceCard .workPlace {
+    font-size: 13 px;
+  }
+  
+  .experienceCard .line {
+    width: 20vw;
+  }
+  
+  .experienceCard .body {
+    width: 80vw;
+  }
+  
+  .experienceCard .body .title {
+    font-size: medium;
+  }
+  
+
+  
+  /*Knowledge*/
+  
+  .knowledgeSection {
+    padding: 0vh 2em;
+    width: 100vw;
+    gap: 3em;
+  }
+  
+  
+  .knowledgeSection .knowledgeCard {
+    gap: 1em;
+  }
+  
+  .knowledgeSection .knowledgeCard img {
+    width: 8vw;
+    height: 8vh;
+  }
+  
+  .knowledgeSection .knowledgeCard .body .title {
+    font-size: 13px;
+    margin-bottom: 3vh;
+  }
+  
+  .knowledgeSection .knowledgeCard .body .name {
+    font-size: 12px;
+  }
+  
+  
+  /*PROJECTS*/
+  
+  .projectsSection {
+    height: fit-content;
+    width: 100vw;
+    padding-top: 5vh;
+    padding-left: 2em;
+  }
+  
+  .projectsSection .projectCard {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+  
+  .projectsSection .projectCard .number{
+    font-size: 150px;
+    opacity: .4;
+  }
+  
+  .projectsSection .projectCard .content {
+    width: 100vw;
+    gap: 1em;
+  }
+  
+  .projectCard .imgRender {
+    width: 80vw;
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    opacity: .4;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  
+  .projectCard .imgRender:hover {
+    opacity: 1;
+  }
+  
+  .projectCard .description {
+    opacity: .4;
+  }
+  
+  
+  /*NAV*/
+  
+  .sectionsNavContainer {
+    display: none;
+  }
+  
+  .sectionsNavContainer .mainNav {
+    height: 75vh;
+    width: 70%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    left: 80%;
+  }
+  
+  
+  .sectionsNavContainer .mainNav .indicator {
+    display: flex;
+    gap: 2em;
+  }
+  
+  .sectionsNavContainer .mainNav .line {
+    position: absolute;
+    width: 1px;
+    height: 75vh;
+    background-color: var(--mainText);
+    left: 1%;
+  }
+  
+  .sectionsNavContainer .mainNav .dot {
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background-color: var(--mainText);
+    border-radius: 50%;
+  }
+  
+  
+  /*Light animation*/
+  
+  .lightAnimation {
+    animation: lightAnimation 1s infinite;
+  }
+  
+  .off {
+    color: gray !important;
+    filter: drop-shadow(0px 0px 0px) !important;
+    -webkit-text-stroke: 0px !important;
+  }
+}

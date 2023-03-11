@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+:root {
+  --primaryColor: #000;
+  --mainText: #FFF;
+  --about: #E12FE9;
+  --experience: #00FFF5;
+  --knowledge:  #FD7014;
+  --projects: rgb(78,153,103)
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primaryColor);
+  color: var(--mainText);
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainText);
+}
+
+.mainContainer {
+  display: flex;
+}
+
+.whiteShine {
+  filter: drop-shadow(0px 0px 23px var(--mainText));
+  -webkit-text-stroke: 1px var(--mainText);
+}
