@@ -1,0 +1,31 @@
+.landing {
+  display: flex;
+  padding-top: 10vh;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.landing .description {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.landing .introduction {
+  width: 40vw;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+@media (max-width: 800px) {
+    .landing {
+      flex-direction: column;
+    }
+
+    .landing .introduction {
+      width: 90vw;
+      font-size: 10px;
+    }
+}
