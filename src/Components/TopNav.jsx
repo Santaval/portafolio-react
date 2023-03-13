@@ -12,9 +12,9 @@ function TopNav({section}) {
 
   return (
     <nav className='topNav'>
-      <FontAwesomeIcon size={60} color='grey' icon={faBars} className='topNavIcon'/>
+      <FontAwesomeIcon size={'lg'} color='grey' icon={faBars} className='topNavIcon'/>
       
-      {links.map((link)=> <Link to={`/${link}`}><span className={`navItem ${link === section ? 'topNavSelected' : ''}`}>{link}</span></Link>)}
+      {links.map((link, index)=> <Link key={index} to={`/${link}`}><span className={`navItem ${link === section ? 'topNavSelected' : ''}`}>{link}</span></Link>)}
     </nav>
   )
 }
