@@ -51,15 +51,20 @@ a {
 .btn1 {
   width: fit-content;
   height: fit-content;
+  min-height: 40px;
+  min-width: 60px;
   padding: .5em 1em;
   background-color: var(--mainText);
   color: var(--primaryColor);
   border-radius: 5px;
   transition: all .3s;
   cursor: pointer;
+  border: none;
 }
 
 .btn2 {
+  min-height: 40px;
+  min-width: 60px;
   width: fit-content;
   height: fit-content;
   padding: .5em 1em;
@@ -83,4 +88,16 @@ a {
 .h1 {
   font-weight: bolder;
   font-size: 50px;
+}
+
+.h2 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.details {
+  font-weight: 300;
+  font-size: 14px;
+  color: gray;
+  font-weight: bolder;
 }

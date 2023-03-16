@@ -1,0 +1,38 @@
+.projects {
+  padding-top: 12vh;
+}
+
+.projects .projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  height: 85vh;
+}
+
+.projectCard .header {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+
+.projectCard .header .body {
+  width: 30vw;
+}
+
+.projectCard .header .number {
+  font-size: 120px;
+  font-weight: bolder;
+}
+
+.projectCard .header .title {
+  font-size: 50px;
+}
+
+.projectCard img {
+  width: 40vw;
+  height: 40vh;
+  object-fit: contain;
+}

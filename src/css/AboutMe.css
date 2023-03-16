@@ -1,91 +1,87 @@
 .aboutMe {
-    display: flex;
-    padding-top: 12vh;
-    align-items: center;
-    height: 100vh;
-    gap: 5em;
-    justify-content: center;
+  display: flex;
+  padding-top: 12vh;
+  align-items: center;
+  height: 100vh;
+  gap: 5em;
+  justify-content: center;
 }
 
 .aboutMe img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .aboutMe .body {
-    width: 35vw;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  width: 35vw;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .aboutMe .name {
-    width: 50%;
+  width: 50%;
 }
 
 .aboutMe .buttons {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 }
 
-
 .knowledgeSection {
-    padding: 15vh 5em;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 20em;
-  }
-  
+  width: 100vw;
+  padding: 15vh 5em;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20em;
+}
 
-  
-  .knowledgeSection .knowledgeCard {
-    display: flex;
-  }
-  
-  .knowledgeSection .knowledgeCard img {
-    width: 10vw;
-    height: 10vh;
-  }
-  
-  .knowledgeSection .knowledgeCard .body .title {
-    font-size: large;
-    font-weight: bolder;
-    margin-bottom: 3vh;
-  }
-  
-  .knowledgeSection .knowledgeCard .body .name {
-    margin-bottom: 1vh;
-  }
-  
+.knowledgeSection .knowledgeCard {
+  display: flex;
+}
 
+.knowledgeSection .knowledgeCard img {
+  width: 10vw;
+  height: 10vh;
+}
 
+.knowledgeSection .knowledgeCard .body .title {
+  font-size: large;
+  font-weight: bolder;
+  margin-bottom: 3vh;
+}
+
+.knowledgeSection .knowledgeCard .body .name {
+  margin-bottom: 1vh;
+}
 
 @media (max-width: 800px) {
-    .aboutMe {
-        flex-direction: column;
-        gap: 2em;
-        height: 120vh;
-    }
+  .aboutMe {
+    flex-direction: column;
+    gap: 2em;
+    height: 120vh;
+  }
 
-    .aboutMe img {
-        width: 80vw;
-        height: 40vh ;
-    }
+  .aboutMe img {
+    width: 80vw;
+    height: 40vh;
+  }
 
-    .aboutMe .name {
-        font-size: 40px;
-        width: fit-content;
-    }
+  .aboutMe .name {
+    font-size: 40px;
+    width: fit-content;
+  }
 
-    .aboutMe .body {
-        width: 90vw;
-    }
+  .aboutMe .body {
+    width: 90vw;
+  }
 
-    .knowledgeSection {
-        padding: 15vh 5em;
+  .knowledgeSection {
+    padding: 15vh 5em;
 
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 20em;
-      }
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20em;
+  }
 }
