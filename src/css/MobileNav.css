@@ -1,0 +1,34 @@
+.mbNav {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background-color: var(--primaryColor);
+  gap: 3em;
+}
+
+.mbNav .topNavIcon {
+  cursor: pointer;
+}
+
+.mbNav .navItem {
+  font-weight: 100;
+  font-size: 24px;
+  transition: all .1s;
+}
+
+.mbNav .navItem:hover {
+  font-weight:400;
+}
+
+.mbNav .topNavSelected {
+  font-weight:400;
+}
+
+
+
+
+

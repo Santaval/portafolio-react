@@ -1,14 +1,19 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link } from "react-router-dom";
 import Squares from "../Components/Squares";
 import TopNav from "../Components/TopNav";
+import MobileNav from '../Components/MobileNav';
+import {MbNavContext} from '../context/MbNavContext'
 
 import "../css/Landing.css";
 function Landing() {
+
+  const {nav} = useContext(MbNavContext)
+
   return (
     <>
       <TopNav section={"Inicio"} />
-
+      <MobileNav/>
       <div className="landing">
         <Squares size="300px" Component={Title} />
        <div className="description">
