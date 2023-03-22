@@ -80,8 +80,16 @@
 
   .knowledgeSection {
     padding: 15vh 5em;
-
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 20em;
+    row-gap: 10em;
+  }
+
+  .knowledgeCard {
+    width: 80%;
+    gap: 2em;
+  }
+
+  .knowledgeCard img {
+    transform: scale(2,2);
   }
 }

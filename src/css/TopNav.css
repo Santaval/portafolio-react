@@ -44,5 +44,12 @@
 
     .topNav .topNavSelected {
       display: block;
+      font-size: 14px;
+    }
+
+    .topNav {
+      justify-content: left;
+      gap: .5em;
+      padding-left: 1em;
     }
 }

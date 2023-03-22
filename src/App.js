@@ -1,4 +1,7 @@
+import { useContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MobileNav from "./Components/MobileNav";
+import { MbNavContext } from "./context/MbNavState";
 import "./css/App.css";
 import AboutMe from "./Views/AboutMe";
 import Contact from "./Views/Contact";
@@ -7,9 +10,14 @@ import Landing from "./Views/Landing";
 import Projects from "./Views/Projects";
 
 function App() {
+
+  const {nav} = useContext(MbNavContext)
+
   return (
     <>
+
       <BrowserRouter>
+      {nav &&  <MobileNav/>}
         <Routes>
           <Route path="/" element={<Landing />}/>
           <Route path="/Inicio" element={<Landing />}/>

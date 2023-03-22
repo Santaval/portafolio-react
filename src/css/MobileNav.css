@@ -8,6 +8,7 @@
   z-index: 10;
   background-color: var(--primaryColor);
   gap: 3em;
+  z-index: 100;
 }
 
 .mbNav .topNavIcon {

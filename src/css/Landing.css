@@ -28,4 +28,9 @@
       width: 90vw;
       font-size: 10px;
     }
+
+    .squaresContainer{
+      width: 300px !important;
+      height: 300px !important;
+    }
 }

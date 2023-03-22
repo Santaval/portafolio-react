@@ -17,7 +17,6 @@
   gap: 3em;
 }
 
-
 .projectCard .header .body {
   width: 30vw;
 }
@@ -35,4 +34,35 @@
   width: 40vw;
   height: 40vh;
   object-fit: contain;
+}
+
+@media screen {
+
+  .projectCard {
+    margin-bottom: 5em;
+  }
+
+  .projectCard .header {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .projectCard .header .body {
+    width: 70vw;
+  }
+
+  .projectCard .header .number {
+    font-size: 80px;
+    width: 100%;
+  }
+
+  .projectCard .header .title {
+    font-size: 50px;
+  }
+
+  .projectCard img {
+    width: 70vw;
+    height: 50vh;
+    object-fit: contain;
+  }
 }

@@ -33,3 +33,50 @@
   color: grey;
   font-weight: bolder;
 }
+
+
+@media (max-width:800px) {
+
+  .experience {
+    justify-content: left;
+    padding-top: 15vh;
+    padding-left: 0vw;
+    *padding-right: 25vw;
+    *flex-direction: column;
+    gap: 5em;
+  }
+  
+
+  
+  .experience .squaresContainer .data {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .experience .experienceCard {
+    width: 60%;
+  }
+  
+  .experience .experienceCard .jobTitle {
+    color: #FE4A49;
+    font-size: 12px;
+  }
+
+  .experience .experienceCard .enterprise {
+    font-size: 18px;
+  }
+
+  .experience .experienceCard .description  {
+    font-size: 11px;
+  }
+  
+  .experience .experienceCard .time {
+    margin-top: 2vh;
+    color: grey;
+    font-weight: bolder;
+  }
+  .squaresContainer {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
