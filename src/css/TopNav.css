@@ -1,0 +1,55 @@
+.topNav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  height: 10vh;
+  padding: 1em 0em;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background-color: var(--primaryColor);
+  padding-right: 20vw;
+}
+
+.topNav .topNavIcon {
+  cursor: pointer;
+}
+
+.topNav .navItem {
+  font-weight: 100;
+  font-size: 24px;
+  transition: all .1s;
+}
+
+.topNav .navItem:hover {
+  font-weight:400;
+}
+
+.topNav .topNavSelected {
+  font-weight:400;
+}
+
+
+.mbNav {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (max-width:800px) {
+
+    .topNav .navItem {
+      display: none;
+    }
+
+    .topNav .topNavSelected {
+      display: block;
+      font-size: 14px;
+    }
+
+    .topNav {
+      justify-content: left;
+      gap: .5em;
+      padding-left: 1em;
+    }
+}

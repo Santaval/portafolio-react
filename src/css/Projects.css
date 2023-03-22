@@ -1,0 +1,68 @@
+.projects {
+  padding-top: 12vh;
+}
+
+.projects .projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  height: 85vh;
+}
+
+.projectCard .header {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+.projectCard .header .body {
+  width: 30vw;
+}
+
+.projectCard .header .number {
+  font-size: 120px;
+  font-weight: bolder;
+}
+
+.projectCard .header .title {
+  font-size: 50px;
+}
+
+.projectCard img {
+  width: 40vw;
+  height: 40vh;
+  object-fit: contain;
+}
+
+@media screen {
+
+  .projectCard {
+    margin-bottom: 5em;
+  }
+
+  .projectCard .header {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .projectCard .header .body {
+    width: 70vw;
+  }
+
+  .projectCard .header .number {
+    font-size: 80px;
+    width: 100%;
+  }
+
+  .projectCard .header .title {
+    font-size: 50px;
+  }
+
+  .projectCard img {
+    width: 70vw;
+    height: 50vh;
+    object-fit: contain;
+  }
+}

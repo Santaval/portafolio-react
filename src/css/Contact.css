@@ -1,0 +1,96 @@
+.contact{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12vh;
+  font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+.contact svg{
+  margin-top: -40vh;
+}
+
+
+.submit{
+  margin: auto;
+  width: 7vw;
+  height: 5vh;
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+
+
+.contactButton{
+  width: 11vw;
+  height: 10vh;
+  border: 1px solid #000;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  margin-bottom: 5vh;
+  transition: all .3s;
+ 
+}
+
+.submit{
+  transition: all .3s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.submit:hover{
+
+  background-color: #000;
+  color: #fff;
+  
+}
+
+.contact form{
+  margin: auto;
+  margin-top: 4vh;
+  text-align: center;
+}
+.inputContainer{
+  margin-bottom: 5vh;
+}
+
+.contact input{
+  border: none;
+  border-bottom: 1px solid #a9a9a9;
+  background-color: transparent;
+  text-align: center;
+  width: 20vw;
+
+}
+
+.socialsContainer{
+  margin-top: 7vh;
+  text-align: center;
+}
+
+.socialsContainer p{
+  font-size: 20px;
+  margin-bottom: 1vh;
+}
+
+.icons{
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.socialsContainer i{
+  font-size: 30px;
+}
+
+.emailp{
+  color: #a9a9a9;
+  font-size: 15px;
+  margin-top: 3vh;
+}

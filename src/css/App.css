@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 :root {
-  --primaryColor: #000;
-  --mainText: #FFF;
+  --primaryColor: #E6E6E6;
+  --mainText: #000000;
   --about: #E12FE9;
   --experience: #00FFF5;
   --knowledge:  #FD7014;
@@ -29,6 +29,15 @@ a {
   color: var(--mainText);
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--primaryColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--mainText);
+}
+
 .mainContainer {
   display: flex;
 }
@@ -36,4 +45,59 @@ a {
 .whiteShine {
   filter: drop-shadow(0px 0px 23px var(--mainText));
   -webkit-text-stroke: 1px var(--mainText);
+}
+
+
+.btn1 {
+  width: fit-content;
+  height: fit-content;
+  min-height: 40px;
+  min-width: 60px;
+  padding: .5em 1em;
+  background-color: var(--mainText);
+  color: var(--primaryColor);
+  border-radius: 5px;
+  transition: all .3s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn2 {
+  min-height: 40px;
+  min-width: 60px;
+  width: fit-content;
+  height: fit-content;
+  padding: .5em 1em;
+  background-color: var(--primaryColor);
+  color: var(--mainText);
+  border-radius: 5px;
+  transition: all .3s;
+  border: 1px solid var(--mainText);
+  cursor: pointer;
+}
+
+.btn1:hover {
+  transform: scale(1.1,1.1);
+}
+
+.text {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.h1 {
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.h2 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.details {
+  font-weight: 300;
+  font-size: 14px;
+  color: gray;
+  font-weight: bolder;
 }

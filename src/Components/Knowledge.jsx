@@ -2,6 +2,9 @@ import Aos from "aos";
 import React, { useEffect } from "react";
 
 function Knowledge() {
+
+  
+
   return (
     <section id="knowledge" className="knowledgeSection">
       <KnowledgeCard
@@ -13,7 +16,7 @@ function Knowledge() {
 
       <KnowledgeCard
         img="react.svg"
-        title="Frameworks y Librerìas"
+        title="Frameworks y Librerías"
         elements={["React-native", "ExpressJS", "Tailwind", "NodeJS", "React"]}
         fade="left"
       />
@@ -41,8 +44,8 @@ function Knowledge() {
 
       <KnowledgeCard
         img="lightbulb-solid.svg"
-        title="Otas Habilidades"
-        elements={["Google Analytics", 'Enseñanza', 'Comunicaciòn', 'Compañerismo']}
+        title="Otras Habilidades"
+        elements={["Google Analytics", 'Enseñanza', 'Comunicación', 'Compañerismo']}
         fade="left"
       />
     </section>
