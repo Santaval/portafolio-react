@@ -9,7 +9,7 @@ import '../css/TopNav.css'
 function TopNav({section}) {
 
   const {nav, setNav} = useContext(MbNavContext)
-  const links = ['Inicio', 'SobreMi', 'Experiencia', 'Proyectos', /*'Diseños', "API'S",*/ 'Contacto']
+  const links = ['Inicio', 'SobreMi', 'Experiencia', 'Proyectos', /*'Diseños', */"API'S",'Contacto']
 
 
   return (

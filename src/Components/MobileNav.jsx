@@ -1,7 +1,7 @@
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useContext } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { MbNavContext } from '../context/MbNavState'
 
 import '../css/MobileNav.css'
@@ -10,7 +10,7 @@ function MobileNav({section}) {
 
   const navigate = useNavigate()
   const {nav, setNav} = useContext(MbNavContext)
-  const links = ['Inicio', 'SobreMi', 'Experiencia', 'Proyectos', /*'Diseños', "API'S",*/ 'Contacto']
+  const links = ['Inicio', 'SobreMi', 'Experiencia', 'Proyectos', /*'Diseños',*/ "API'S", 'Contacto']
 
 
   return (

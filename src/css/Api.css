@@ -1,0 +1,65 @@
+.apisContainer {
+  padding: 0em 9em;
+  padding-top: 17vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+}
+
+.apiCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border: 1px solid #807e7e;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.apiCard .header {
+  display: flex;
+  place-items: center;
+  gap: 1.5em;
+}
+
+
+.apiCard .header .apiName {
+  font-size: 25px;
+  font-weight: medium;
+}
+
+.apiCard .header .status {
+  background-color: #bdbcbc;
+  padding: .5em;
+  border-radius: 10px;
+  color: green;
+}
+
+.apiCard .header .status span {
+  font-size: 13px;
+}
+
+.apiCard .description {
+  width: 60%;
+  min-height: 9vh;
+}
+
+.apiCard .indicators {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.apiCard .indicators .indicator {
+  display: flex;
+  gap: .5em;
+  place-items: center;
+  font-size: 15px;
+}
+
+
+@media (max-width: 800px) {
+    .apisContainer {
+      padding: 10em 3em;
+      grid-template-columns: 1fr;
+    }
+}

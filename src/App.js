@@ -4,6 +4,7 @@ import MobileNav from "./Components/MobileNav";
 import { MbNavContext } from "./context/MbNavState";
 import "./css/App.css";
 import AboutMe from "./Views/AboutMe";
+import API from "./Views/API";
 import Contact from "./Views/Contact";
 import Experience from "./Views/Experience";
 import Landing from "./Views/Landing";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Experiencia" element={<Experience />}/>
           <Route path="/Proyectos" element={<Projects />}/>
           <Route path="/Contacto" element={<Contact />}/>
+          <Route path="/API'S" element={<API />}/>
         </Routes>
       </BrowserRouter>
     </>
